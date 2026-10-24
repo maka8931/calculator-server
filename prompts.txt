@@ -1,0 +1,9 @@
+I have an existing FastAPI Calculator Server project. Please confirm your understanding of the project before generating any files. I want to run the existing calculator backend with MySQL using Docker Compose. Preserve the existing calculator and history functionality.
+
+Please generate a Dockerfile and a .dockerignore file for this project. The FastAPI backend must listen on 0.0.0.0:5000.
+
+Please generate a compose.yaml file with a backend service and a MySQL 8.4 database service. Publish the backend on host port 34242, use a named volume for MySQL data persistence, configure a database health check, and make the backend wait until the database is healthy. Configure the DATABASE_URL environment variable to connect to the database service using MySQL Connector.
+
+How can I add SQLAlchemy database connection code and a /test-db endpoint to my existing FastAPI application without replacing the existing calculator and history routes?
+
+Please provide commands to verify the configuration, start the services, test the calculator API and database connection, and demonstrate that database records survive container removal and recreation.
